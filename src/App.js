@@ -1,23 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { useState } from "react";
+import "./App.css";
+import Navbar from "./components/navbar/navbar";
+import Modal from "./components/modalka/modal";
+import Random from "./components/random/random";
 
 function App() {
+  const [openModal, setOpenModal] = useState(false);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+      <Navbar />
+      <div className="openModal">
+        <h1 className="openModalTitle">Hello world</h1>
+        <button
+          className="openModalBtn"
+          onClick={() => {
+            setOpenModal(true);
+          }}
         >
-          Learn React
-        </a>
-      </header>
+          Open
+        </button>
+        {openModal && <Modal closeModal={setOpenModal} />}
+      </div>
+      <h2 className="randomTitle">Random Images</h2>
+      <div className="image-container">
+        <Random />
+      </div>
     </div>
   );
 }
