@@ -3,6 +3,7 @@ import { useState } from "react";
 import "./App.css";
 import Navbar from "./components/navbar/navbar";
 import Modal from "./components/modalka/modal";
+import Random from "./components/random/random";
 
 function App() {
   const [openModal, setOpenModal] = useState(false);
@@ -21,6 +22,10 @@ function App() {
           Open
         </button>
         {openModal && <Modal closeModal={setOpenModal} />}
+      </div>
+      <h2 className="randomTitle">Random Images</h2>
+      <div className="image-container">
+        <Random />
       </div>
     </div>
   );
