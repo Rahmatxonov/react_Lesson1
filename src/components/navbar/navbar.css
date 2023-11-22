@@ -1,3 +1,6 @@
+body {
+  background-color: bisque;
+}
 .navbar {
   display: flex;
   justify-content: space-between;
