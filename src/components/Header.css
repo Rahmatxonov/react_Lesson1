@@ -1,5 +1,5 @@
 body {
-  background-image: url(../assets/images/bg.jfif);
+  background-image: url(../assets/images/bg5.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -11,6 +11,7 @@ body {
   font-size: 44px;
   font-weight: 700;
   letter-spacing: 2px;
+  color: white;
 }
 .user-list-container {
   display: grid;
@@ -23,10 +24,11 @@ body {
   padding: 20px;
   border: 1px solid #ddd;
   border-radius: 8px;
-  background-color: #20f7e21e;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #209af7a8;
+  box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.598);
   transition: transform 0.3s ease-in-out;
   margin-top: 50px;
+  color: #ffffff;
 }
 
 .user-card:hover {
@@ -42,4 +44,18 @@ body {
 }
 .btns {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.btns-btn {
+  background-color: transparent;
+  border: 1px solid #ddd;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+.btns-btn:hover {
+  cursor: pointer;
+  background-color: rgba(24, 183, 252, 0.822);
+  color: white;
 }
