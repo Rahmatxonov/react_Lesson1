@@ -1,12 +1,10 @@
-import HomePage from "./pages/HomePage";
+import FetchCountries from "./components/FetchCountries";
 
 function App() {
   return (
-    <>
-      <main>
-        <HomePage />
-      </main>
-    </>
+    <div className="container">
+      <FetchCountries />;
+    </div>
   );
 }
 

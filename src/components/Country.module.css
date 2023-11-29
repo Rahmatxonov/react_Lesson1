@@ -1,0 +1,33 @@
+body {
+  background: #888;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  flex-wrap: wrap;
+  gap: 20px;
+  padding-top: 20px;
+}
+.countryFlags {
+  width: 100%;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+.box {
+  box-shadow: 5px 5px 5px #888;
+  border-radius: 5px;
+  background: #bdbdbd;
+  padding: 10px;
+}
+.title {
+  text-align: center;
+  font-weight: 800;
+  font-size: 44px;
+  padding-top: 20px;
+}
+.inputs {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+}
