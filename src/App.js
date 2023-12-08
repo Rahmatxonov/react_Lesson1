@@ -1,12 +1,9 @@
-import React, { Fragment } from "react";
 import "./App.css";
-import HomePage from "./pages/HomePage";
+import Counter from "./components/Counter";
 
 function App() {
   return (
-    <Fragment>
-      <HomePage />
-    </Fragment>
+    
   );
 }
 
