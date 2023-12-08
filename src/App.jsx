@@ -1,5 +1,6 @@
 import "./App.css";
 import { useMemo, useState } from "react";
+import Counter from "./components/Counter";
 
 function App() {
   const [number, setNumber] = useState(0);
@@ -32,6 +33,8 @@ function App() {
       <div className="card" style={themeStyle}>
         Hello World
       </div>
+
+      <Counter />
     </>
   );
 }
