@@ -1,8 +1,11 @@
 import "./App.css";
-import TodoList from "./components/TodoList";
-
+import Headers from "./components/Headers";
 function App() {
-  return <TodoList />;
+  return (
+    <>
+      <Headers />
+    </>
+  );
 }
 
 export default App;
